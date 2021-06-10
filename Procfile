@@ -1,1 +1,1 @@
-web: gestaoloja
+web: aulahaskell
