@@ -41,23 +41,20 @@
                 <thead>
                   <tr>
                     <th scope="col">Nome
-                    <th scope="col">Telefone
                     <th scope="col">Mais informações
                     <th scope="col">Editar
                     <th scope="col">Excluir
                 <tbody>
                   $forall Entity fuid func <- funcionarios
                     <tr>
-                      <td class="pt-3 text-center">
+                      <td class="pt-3">
                         #{funcionarioNome func}
-                      <td class="pt-3 text-center">
-                        #{funcionarioTelefone func}
-                      <td class="text-center">
+                      <td>
                         <a class="btn btn-info text-light" href=@{CatalogoFuncR fuid}> visualizar
-                      <td class="text-center">
+                      <td>
                         <a class="btn btn-primary text-light" href=@{EditarFuncR fuid}>
                           Editar
-                      <td class="text-center">
+                      <td>
                         <form method=post action=@{ApagarFuncR fuid}>
                           <button class="btn btn-danger" type="submit">excluir
 

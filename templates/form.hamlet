@@ -13,23 +13,23 @@ $maybe mensa <- msg
     <div class="container-fluid p-0 h-100 d-flex flex-row">
       <nav class="navbar navbar-expand-lg navbar-light h-100 col-2 rounded-0 flex-column pt-0 menuLeft">
         <div class="divLogo">
-          <ul class="navbar-nav mr-auto flex-column pt-5 w-100">
-            <li class="nav-item" id="limenuP">
-              <small>menu
-            <li class="nav-item">
-              <a class="nav-link text-light pt-3 pb-3" href=@{HomeR}>Home
-            <li class="nav-item">
-              <a class="nav-link text-light pt-3 pb-3" href=@{ProdutoR}>Cadastrar produtos
-            <li class="nav-item">
-              <a class="nav-link text-light pt-3 pb-3" href=@{ListarProdR}>Lista de produtos
-            <li class="nav-item">
-              <a class="nav-link text-light pt-3 pb-3" href=@{FornecedorR}>Cadastrar fornecedores
-            <li class="nav-item">
-              <a class="nav-link text-light pt-3 pb-3" href=@{ListarFornR}>Lista de fornecedores
-            <li class="nav-item">
-              <a class="nav-link text-light pt-3 pb-3" href=@{FuncionarioR}>Cadastrar funcionários
-            <li class="nav-item">
-              <a class="nav-link text-light pt-3 pb-3" href=@{ListarFuncR}>Lista de funcionários
+        <ul class="navbar-nav mr-auto flex-column pt-5 w-100">
+          <li class="nav-item" id="limenuP">
+            <small>menu
+          <li class="nav-item">
+            <a class="nav-link text-light pt-3 pb-3" href=@{HomeR}>Home
+          <li class="nav-item">
+            <a class="nav-link text-light pt-3 pb-3" href=@{ProdutoR}>Cadastrar produtos
+          <li class="nav-item">
+            <a class="nav-link text-light pt-3 pb-3" href=@{ListarProdR}>Lista de produtos
+          <li class="nav-item">
+            <a class="nav-link text-light pt-3 pb-3" href=@{FornecedorR}>Cadastrar fornecedores
+          <li class="nav-item">
+            <a class="nav-link text-light pt-3 pb-3" href=@{ListarFornR}>Lista de fornecedores
+          <li class="nav-item">
+            <a class="nav-link text-light pt-3 pb-3" href=@{FuncionarioR}>Cadastrar funcionários
+          <li class="nav-item">
+            <a class="nav-link text-light pt-3 pb-3" href=@{ListarFuncR}>Lista de funcionários
       <div class="w-100 h-100 d-flex flex-column">
         <div class="menuTop col-12 d-flex justify-content-end align-items-center">
           <img class="mr-3" src="../static/images/user.png" height="30" style="margin-right:15px">

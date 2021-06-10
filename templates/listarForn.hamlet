@@ -41,26 +41,20 @@
                 <thead>
                   <tr>
                     <th scope="col">Nome
-                    <th scope="col">Telefone
-                    <th scope="col">Produto fornecido
                     <th scope="col">Mais informações
                     <th scope="col">Editar
                     <th scope="col">Excluir
                 <tbody>
                   $forall Entity fid forn <- fornecedores
                     <tr>
-                      <td class="pt-3 text-center">
+                      <td class="pt-3">
                         #{fornecedorNome forn}
-                      <td class="pt-3 text-center">
-                        #{fornecedorTelefone forn}
-                      <td class="pt-3 text-center">
-                        #{fornecedorProdutoFornecido forn}
-                      <td class="text-center">
+                      <td>
                         <a class="btn btn-info text-light" href=@{CatalogoFornR fid}> visualizar
-                      <td class="text-center">
+                      <td>
                         <a class="btn btn-primary text-light" href=@{EditarFornR fid}>
                           Editar
-                      <td class="text-center">
+                      <td>
                         <form method=post action=@{ApagarFornR fid}>
                           <button class="btn btn-danger" type="submit">excluir
 

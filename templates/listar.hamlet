@@ -41,7 +41,6 @@
                 <thead>
                   <tr>
                     <th scope="col">Nome
-                    <th scope="col">Marca
                     <th scope="col">Preço
                     <th scope="col">Mais informações
                     <th scope="col">Editar
@@ -51,8 +50,6 @@
                     <tr>
                       <td class="pt-3 text-center">
                         #{produtoNome prod}
-                      <td class="pt-3 text-center">
-                        #{produtoMarca prod}
                       <td class="pt-3 text-center">
                         R$ #{produtoPreco prod}
                       <td class="text-center">
