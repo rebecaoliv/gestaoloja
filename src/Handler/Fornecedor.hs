@@ -46,19 +46,7 @@ postFornecedorR = do
 getCatalogoFornR :: FornecedorId -> Handler Html
 getCatalogoFornR fid = do
     fornecedor <- runDB $ get404 fid
-    defaultLayout [whamlet|
-        <h1>
-            Nome: #{fornecedorNome fornecedor}
-        <h1>
-            Cnpj: #{fornecedorCnpj fornecedor}
-        <h2>
-            Endereco: #{fornecedorEndereco fornecedor}
-        <h3>
-            Telefone: #{fornecedorTelefone fornecedor}
-        <h3>
-            Produto fornecido: #{fornecedorProdutoFornecido fornecedor}
-    |] 
-
+    defaultLayout $(whamletFile "templates/catalogoForn.hamlet") 
 --delete from Fornruto where id = fid
 postApagarFornR :: FornecedorId -> Handler Html
 postApagarFornR fid = do

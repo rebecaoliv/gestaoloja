@@ -45,18 +45,7 @@ postProdutoR = do
 getCatalogoProdR :: ProdutoId -> Handler Html
 getCatalogoProdR pid = do
     produto <- runDB $ get404 pid
-    defaultLayout [whamlet|
-        <h1>
-            Nome: #{produtoNome produto}
-        <h1>
-          Marca: #{produtoMarca produto}
-
-        <h2>
-            Preco: #{produtoPreco produto}
-            
-        <h3>
-            Descr: #{produtoDescr produto}
-    |] 
+    defaultLayout $(whamletFile "templates/catalogoProduto.hamlet")
 
 --delete from prodruto where id = pid
 postApagarProdR :: ProdutoId -> Handler Html

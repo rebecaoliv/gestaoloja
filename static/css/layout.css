@@ -20,27 +20,62 @@ a, a:hover {
 }
 
 .menuLeft {
-  width: 12%!important;
-  background-color:#272e38;
+  width: 14%!important;
+  background-color:#02485c;
+}
+
+.menuLeft .divLogo {
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45px;
+  width: 100%;
+  border-bottom: 2px solid #24c0eb;
 }
 
 .menuTop {
-  height: 40px;
-  background-color: #2d3540;
+  height: 45px;
+  background-color: #16738d;
 }
 
 .btnSair {
-  width: 50px; 
-  margin-right: 15px;
+  width: 80px; 
 }
 
-.btnSair:hover, .nav-item:hover {
-  background-color: #575e66;
+.btnSair:hover {
+  background-color: #02485c;
   transition: 0.3s;
 }
 
-.divFormMain .divContent {
+.nav-item {
+  border-bottom: 1px solid #013442;
+}
+
+.nav-item:hover {
+  background-color: #013442;
+  transition: 0.3s;
+}
+
+.navbar-nav #limenuP {
+  height: 20px;
+  background-color: #013442;
+  color: #00242e;
+  padding-left: 10px;
+}
+
+.divFormMain .divContent, 
+.divCatMain .divContent,
+.divHomeMain .divContent {
   box-shadow: 0px 5px 10px 5px #d9d9d9;
+}
+
+.divHomeMain .divContent {
+  justify-content: space-evenly;
+}
+
+.divHomeMain .divContent .cardHome {
+  background-color: #327587;
 }
 
 .divFormMain .divContent h1 {
@@ -83,3 +118,13 @@ textarea {
   resize: none;
   border-radius: 4px;
 }
+
+.divCatMain .divContent h1 {
+  font-size: 1.3rem;
+}
+
+.divCatMain .divContent .list-group-item p {
+  font-weight: normal;
+  margin-bottom: .5rem;
+}
+

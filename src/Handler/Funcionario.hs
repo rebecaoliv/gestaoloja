@@ -45,16 +45,7 @@ postFuncionarioR = do
 getCatalogoFuncR :: FuncionarioId -> Handler Html
 getCatalogoFuncR fuid = do
     funcionario <- runDB $ get404 fuid
-    defaultLayout [whamlet|
-        <h1>
-            Nome: #{funcionarioNome funcionario}
-        <h1>
-            Cnpj: #{funcionarioCpf funcionario}
-        <h2>
-            Endereco: #{funcionarioEndereco funcionario}
-        <h3>
-            Telefone: #{funcionarioTelefone funcionario}
-    |] 
+    defaultLayout $(whamletFile "templates/catalogoFunc.hamlet") 
 
 --delete from Fornruto where id = fuid
 postApagarFuncR :: FuncionarioId -> Handler Html
