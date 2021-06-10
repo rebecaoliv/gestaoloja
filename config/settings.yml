@@ -24,12 +24,12 @@ ip-from-header: "_env:IP_FROM_HEADER:false"
 # See https://github.com/yesodweb/yesod/wiki/Configuration#parsing-numeric-values-as-strings
 
 database:
-  user:     "_env:PGUSER:ommhtvmziitkqi"
-  password: "_env:PGPASS:b86c8d2c70af6751402bbdeda471b22db8ac6e32a4ca157dda9278911dad5003"
-  host:     "_env:PGHOST:ec2-35-171-250-21.compute-1.amazonaws.com"
+  user:     "_env:PGUSER:rnhexqsxylwqwv"
+  password: "_env:PGPASS:b89d885c7da60c4c97c200a2e8a10a7f0fcead55244c85e4f760959abd5d00ca"
+  host:     "_env:PGHOST:ec2-34-233-114-40.compute-1.amazonaws.com"
   port:     "_env:PGPORT:5432"
   # See config/test-settings.yml for an override during tests
-  database: "_env:PGDATABASE:dakmf1trk2397k"
+  database: "_env:PGDATABASE:d8egf0fvghtds"
   poolsize: "_env:PGPOOLSIZE:10"
 
 copyright: Insert copyright statement here
